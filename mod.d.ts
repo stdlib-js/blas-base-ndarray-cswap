@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2026 The Stdlib Authors.
@@ -16,16 +16,27 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { complex64ndarray } from '@stdlib/types/ndarray';
 
 /**
-* BLAS level 1 routine to interchange two one-dimensional complex single-precision floating-point ndarrays.
+* Interchanges two one-dimensional complex single-precision floating-point ndarrays.
 *
-* @module @stdlib/blas-base-ndarray-cswap
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   first one-dimensional input ndarray.
+*     -   second one-dimensional input ndarray.
+*
+* @param arrays - array-like object containing ndarrays
+* @returns second input ndarray
 *
 * @example
 * var Complex64Vector = require( '@stdlib/ndarray-vector-complex64' );
-* var cswap = require( '@stdlib/blas-base-ndarray-cswap' );
 *
 * var x = new Complex64Vector( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 * var y = new Complex64Vector( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
@@ -37,12 +48,9 @@
 * var bool = ( z === y );
 * // returns true
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function cswap( arrays: [ complex64ndarray, complex64ndarray ] ): complex64ndarray;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = cswap;
