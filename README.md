@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import cswap from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ndarray-cswap@esm/index.mjs';
+import cswap from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ndarray-cswap@v0.0.0-esm/index.mjs';
 ```
 
 #### cswap( arrays )
@@ -101,7 +101,7 @@ The function has the following parameters:
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
 import Complex64Vector from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-complex64@esm/index.mjs';
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import cswap from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ndarray-cswap@esm/index.mjs';
+import cswap from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ndarray-cswap@v0.0.0-esm/index.mjs';
 
 var opts = {
     'dtype': 'float32'
